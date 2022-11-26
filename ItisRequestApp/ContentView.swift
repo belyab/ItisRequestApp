@@ -6,10 +6,11 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text(L10n.hello)
+            Text("hi")
         }
         .padding()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
