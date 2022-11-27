@@ -10,6 +10,8 @@
 		D61DAC5C2932334A00461D58 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D61DAC5E2932334A00461D58 /* Localizable.strings */; };
 		D61DAC6029323C6200461D58 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = D61DAC5F29323C6200461D58 /* swiftgen.yml */; };
 		D61DAC6229323DA500461D58 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61DAC6129323DA500461D58 /* Strings.swift */; };
+		D61DAC642933AE8900461D58 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61DAC632933AE8900461D58 /* Assets.swift */; };
+		D61DAC672933B00600461D58 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61DAC662933B00600461D58 /* Launch Screen.storyboard */; };
 		D6D5C884293004E800B9BDDD /* ItisRequestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5C883293004E800B9BDDD /* ItisRequestAppApp.swift */; };
 		D6D5C886293004E800B9BDDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5C885293004E800B9BDDD /* ContentView.swift */; };
 		D6D5C888293004E900B9BDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D5C887293004E900B9BDDD /* Assets.xcassets */; };
@@ -23,6 +25,9 @@
 		D61DAC5D2932334A00461D58 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D61DAC5F29323C6200461D58 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		D61DAC6129323DA500461D58 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		D61DAC632933AE8900461D58 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		D61DAC652933AF2800461D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D61DAC662933B00600461D58 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D6D5C880293004E800B9BDDD /* ItisRequestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItisRequestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D5C883293004E800B9BDDD /* ItisRequestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItisRequestAppApp.swift; sourceTree = "<group>"; };
 		D6D5C885293004E800B9BDDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +68,8 @@
 		D6D5C882293004E800B9BDDD /* ItisRequestApp */ = {
 			isa = PBXGroup;
 			children = (
+				D61DAC662933B00600461D58 /* Launch Screen.storyboard */,
+				D61DAC652933AF2800461D58 /* Info.plist */,
 				D61DAC5F29323C6200461D58 /* swiftgen.yml */,
 				D6D5C89D29300C7800B9BDDD /* Generated */,
 				D6D5C89B29300C4300B9BDDD /* Resources */,
@@ -102,6 +109,7 @@
 		D6D5C89D29300C7800B9BDDD /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				D61DAC632933AE8900461D58 /* Assets.swift */,
 				D61DAC6129323DA500461D58 /* Strings.swift */,
 			);
 			path = Generated;
@@ -174,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61DAC672933B00600461D58 /* Launch Screen.storyboard in Resources */,
 				D6D5C88B293004E900B9BDDD /* Preview Assets.xcassets in Resources */,
 				D61DAC6029323C6200461D58 /* swiftgen.yml in Resources */,
 				D61DAC5C2932334A00461D58 /* Localizable.strings in Resources */,
@@ -211,6 +220,7 @@
 			files = (
 				D6D5C886293004E800B9BDDD /* ContentView.swift in Sources */,
 				D61DAC6229323DA500461D58 /* Strings.swift in Sources */,
+				D61DAC642933AE8900461D58 /* Assets.swift in Sources */,
 				D6D5C884293004E800B9BDDD /* ItisRequestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,11 +363,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ItisRequestApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ItisRequestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,9 +378,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = project.ItisRequestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -381,11 +397,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ItisRequestApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ItisRequestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,9 +412,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = project.ItisRequestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
