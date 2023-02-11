@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nYa-rh-ETr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StudentProfile-->
+        <scene sceneID="94B-Xb-GpH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StudentProfile" referencedIdentifier="StudentProfile" id="tqG-KV-wwo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Профиль" image="homekit" catalog="system" id="b2h-ga-6Gv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwt-2L-3CL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="-358"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="azD-uY-dvY">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nYa-rh-ETr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b2E-hY-Sna">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tqG-KV-wwo" kind="relationship" relationship="viewControllers" id="et4-fY-Y9S"/>
+                        <segue destination="sYL-Ff-aiG" kind="relationship" relationship="viewControllers" id="68A-r9-eSt"/>
+                        <segue destination="LiT-3r-HYd" kind="relationship" relationship="viewControllers" id="Mwf-od-fEk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hag-0V-wvC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="-177"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="l8K-TS-IaZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Events" referencedIdentifier="Events" id="sYL-Ff-aiG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Мероприятия" id="UC6-sA-lEc">
+                        <imageReference key="image" image="line.3.horizontal" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1i7-si-IMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="-212"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Jud-WP-fMY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="LiT-3r-HYd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Настройки" id="6SX-VZ-KTo">
+                        <imageReference key="image" image="gear" catalog="system" symbolScale="small"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDK-WQ-pGN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="-59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+    </resources>
+</document>
